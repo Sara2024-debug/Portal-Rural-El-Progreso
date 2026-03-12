@@ -1,0 +1,145 @@
+:root{
+--verde-principal:#2e7d32;
+--verde-secundario:#1b5e20;
+--fondo:#f4f4f4;
+--blanco:#ffffff;
+--texto:#333;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background:var(--fondo);
+color:var(--texto);
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+background:var(--verde-principal);
+color:var(--blanco);
+text-align:center;
+padding:25px;
+}
+
+/* NAV */
+
+nav{
+background:var(--verde-secundario);
+display:flex;
+justify-content:center;
+gap:25px;
+padding:12px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+/* MAIN */
+
+main{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+/* SECTION */
+
+section{
+background:var(--blanco);
+margin-bottom:20px;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ARTICLE */
+
+article{
+border-left:4px solid var(--verde-principal);
+padding-left:10px;
+margin-bottom:15px;
+}
+
+/* TITULOS */
+
+h2{
+margin-bottom:10px;
+}
+
+h3{
+margin-bottom:5px;
+}
+
+/* FORMULARIO */
+
+form{
+display:flex;
+flex-direction:column;
+max-width:320px;
+}
+
+input{
+padding:10px;
+margin-bottom:10px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+button{
+padding:10px;
+background:var(--verde-principal);
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:var(--verde-secundario);
+}
+
+/* MENSAJE */
+
+#mensaje{
+margin-top:10px;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+background:var(--verde-principal);
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:600px){
+
+nav{
+flex-direction:column;
+align-items:center;
+}
+
+main{
+padding:15px;
+}
+
+}
